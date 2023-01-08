@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário Avançado</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+    <header>
+      <h1>Avalise sua mentoria</h1>
+      <p>Chegou a hora de avaliar seu mentor. Bora lá?</p>
+      <img src="images/logo.svg" alt="Balão de conversa vermelho com 5 estrelas dentro sendo três delas brancas">
+
+      <h2>Informações pessoais</h2>
+    </header>
+
+    <form id="evalution-form">
+      <fieldset class="first-form">
+        <div class="info-person">
+
+          <div class="names">
+            <div class="boxes">
+              <label for="first-name">Nome</label>
+              <input type="text" name="nome" id="first-name">
+            </div>
+            
+            <div class="boxes">
+              <label for="last-name">Sobrenome</label>
+              <input type="text" name="sobrenome" id="last-name">
+            </div>
+          </div>
+
+          <div class="mail-box">
+            <label for="personal-email">E-mail <span>(Digite um e-mail válido)</span></label>
+            <input type="email" id="personal-email">
+          </div>
+
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Informações do mentor</legend>
+
+        <div class="feedback-mentorship">
+          <div class="info-mentor">
+            <label for="name-mentor">Selecione quem foi o seu mentor</label>
+            <input type="text" id="name-mentor">
+          </div>
+  
+          <div class="info-mentor">
+            <label for="feed-mentor">Feedback sobre o mentor</label>
+            <textarea id="feed-mentor"></textarea>
+          </div>
+  
+          <div class="checking">
+            <input type="checkbox" id="check-mentorship">
+            <label for="check-mentorship">Todas as minhas dúvidas foram esclarecidas durante a mentoria.</label>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Agendando próxima mentoria</legend>
+
+        <div class="next-mentorship">
+
+          <div class="date-mentorship">
+            <label for="next-mentor">Data</span></label>
+            <input type="date" id="next-mentor">
+          </div>
+  
+          <div class="date-mentorship">
+            <label for="before-time">Das</label>
+            <input type="time" id="before-time">
+          </div>
+  
+          <div class="date-mentorship">
+            <label for="after-time">Até</label>
+            <input type="time" id="after-time">
+          </div>
+        </div>
+
+      </fieldset>
+      <footer>
+        <input class="button" type="submit" form="evalution-form" value="salvar">
+      </footer>
+    </form>
+  </div>
+</body>
+</html>
